@@ -1,11 +1,11 @@
 ### 2024 BIG DATA HACKATHON PROPOSAL FORM
 
-#### Team Number: `YOUR TEAM NUMBER HERE`  
+#### Team Number: 125 
 
-#### Team Name: `YOUR TEAM NAME HERE`    
+#### Team Name: StAR  
   
 #### Your teamâ€™s hackathon idea in One sentence:
-##### `YOUR ONE SENTENCE HERE`
+##### We want to apply natural language processing (NLP) technologies to the Sharp Healthcare app to make it more accessible to elderly and disabled people.
 
 
 #### A visual
@@ -20,7 +20,7 @@
 #### Hackathon Five CORE Themes. `CHECK ONE or TWO QUESTIONS (insert X in [ ])`.
 - [ ] Access to care
 > How can we make it easier to access care (especially specialists) and provide clear, timely notifications, and reminders along their healthcare journey?
-- [ ] Patient satisfaction
+- [x] Patient satisfaction
 > How can we make it more convenient for patients to provide real-time feedback about their healthcare experience through a mobile app?
 - [ ] New patient experience
 > As a potential new customer, how can we leverage the mobile app to help new patients better understand what services are available to them?
