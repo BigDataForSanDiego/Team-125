@@ -5,7 +5,7 @@
 #### Team Name: StAR  
   
 #### Your team's hackathon idea in One sentence:
-##### We want to apply natural language processing (NLP) technologies to the Sharp Healthcare app to make it more accessible to elderly and disabled people.
+##### We want to apply natural language processing (NLP) technologies to the Sharp Healthcare app to make it more accessible to elderly patients, disabled patients, and patients who speak English as a second language.
 
 
 #### A visual
