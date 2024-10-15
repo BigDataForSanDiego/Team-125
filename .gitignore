@@ -1,3 +1,0 @@
-echo ".venv" >> .gitignore
-pip freeze > requirements.txt
-.venv
