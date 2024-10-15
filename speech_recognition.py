@@ -1,5 +1,6 @@
 # copilot generated code (needs LOTS of review, but is a starting place for us)
 # idea: use most up-to-date speech recognition technology to read audio input from patients
+# increases accessibility specifically for elderly and disabled patients
 
 import speech_recognition as sr
 

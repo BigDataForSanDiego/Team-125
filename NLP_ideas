@@ -1,0 +1,18 @@
+Ideas to implement NLP into the survey:
+- At the beginning of the survey, give two options: one to complete the entire survey manually (already implemented),
+and one to provide verbal or written feedback before seeing any questions (main focus of the project).
+
+- For option 2, the patients would have the option to talk for a limited amount of time (like 5 minutes) or enter a
+limited amount of text (like 300 words) about their overall experience and any important things they would like to note
+before the survey begins.
+    - For the speech option, we would need to implement some speech recognition software to read the input. This would
+    also be a useful tool for answering the questions in the survey verbally also.
+
+- Once the audio/text input is submitted, we can use NLP software to analyze the input to pre-answer survey questions.
+We can use sentiment analysis to determine how the patient felt about several aspects of their visit (e.g. how they felt
+about the doctors/nurses/staff) so we don’t have to ask them these questions later in the survey
+    - My thought is that this can make older people feel less like they’re taking a survey and more like they’re having
+    a conversation about how it went
+
+- For any comments they make that are non-question related, we can store them under the section that asks for additional
+comments/concerns.
