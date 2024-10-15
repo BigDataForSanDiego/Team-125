@@ -3,27 +3,48 @@
 # increases accessibility specifically for elderly and disabled patients
 
 import speech_recognition as sr
+import threading
+
+stop_recording = False
 
 def record_voice_feedback():
+    global stop_recording
     recognizer = sr.Recognizer()  # initialize the recognizer
+
     with sr.Microphone() as source:  # use the mic as audio source
         recognizer.adjust_for_ambient_noise(source)
-        audio = recognizer.listen(source, timeout=180, phrase_time_limit=180)  # set 3 min time limit
-        try:
-            feedback = recognizer.recognize_google(audio)
-            print(f'Feedback received: {feedback}')
-            return feedback
-        except sr.UnknownValueError:
-            print("Sorry, I could not understand the audio.")
-            return None
-        except sr.RequestError:
-            print("Could not request results; check your network connection.")
-            return None
+        print("Please provide your feedback: press 'Enter' to stop recording:")
+
+        def listen():
+            global stop_recording
+            audio = recognizer.listen(source, timeout=180, phrase_time_limit=180)
+            if not stop_recording:
+                try:
+                    feedback = recognizer.recognize_google(audio)
+                    print(f'Feedback received: {feedback}')
+                    return feedback
+                except sr.UnknownValueError as e:
+                    # speech was unintelligible
+                    print("Audio could not be understood.")
+                    return e
+                except sr.RequestError as e:
+                    # API was unreachable/unresponsive
+                    print("Could not request results; please check network connection")
+                    return e
+
+
+
+        # start listening in a separate thread
+        # listen_thread = threading.Thread(target=listen)
+        # listen_thread.start()
+        #
+        # # wait for user input to stop recording
+        # input()
+        # stop_recording = True
+        # listen_thread.join()
 
 def main():
-    feedback = record_voice_feedback()
-    if feedback:
-        print(f'Feedback: {feedback}')
+    record_voice_feedback()
 
 if __name__ == '__main__':
     main()
