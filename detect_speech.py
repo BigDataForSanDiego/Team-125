@@ -5,7 +5,7 @@ def detect_speech():
     with sr.Microphone() as source:  # use mic as source
         recognizer.adjust_for_ambient_noise(source)
         print("Please provide your feedback:")
-        audio = recognizer.listen(source)
+        audio = recognizer.listen(source, phrase_time_limit=180)  # set max duration to 3 minutes
         try:
             feedback = recognizer.recognize_google(audio)
             print(f'Feedback received: {feedback}')
