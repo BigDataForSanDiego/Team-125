@@ -11,7 +11,7 @@
 
 #### A visual
 
-##insert image here when illustrated
+attached in folder!
 
 
 #### Hackathon Five CORE Themes. `CHECK ONE or TWO QUESTIONS (insert X in [ ])`.
