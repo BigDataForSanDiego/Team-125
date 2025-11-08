@@ -7,7 +7,7 @@
 #### Team Members `Thea Enache; theaenache, Miche Maral; michemarall, Kathryn Kiefer; KathrynK365, Claire Fifer; Claire-Fifer`
 
 #### Your team’s hackathon idea in One sentence:
-##### `YOUR ONE SENTENCE HERE`
+##### `Creating a simple, user-friendly platform for housing & helping insecure populations connect to resources & aid.`
 
 #### A visual
 
